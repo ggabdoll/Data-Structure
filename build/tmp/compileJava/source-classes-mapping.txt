@@ -1,4 +1,6 @@
-Stack.java
- Stack
-VPS.java
- VPS
+stack/VPS.java
+ stack.VPS
+stack/Stack.java
+ stack.Stack
+queue/Queue.java
+ queue.Queue
