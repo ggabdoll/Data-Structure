@@ -4,3 +4,7 @@ stack/Stack.java
  stack.Stack
 queue/Queue.java
  queue.Queue
+SearchNum1920ArrayList.java
+ SearchNum1920ArrayList
+SearchNum1920.java
+ SearchNum1920
