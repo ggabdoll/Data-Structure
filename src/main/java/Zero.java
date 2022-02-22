@@ -11,29 +11,30 @@ public class Zero {
 
         int N = Integer.parseInt(br.readLine());
 
-        for (int i = 0; i < N; i++) {
-            sb.append(checkZero(br.readLine())).append("\n");
-        }
+
+        sb.append(checkZero(N, br.readLine()));
+
 
         System.out.println(sb);
     }
 
-    public static String checkZero(String brackets) {
-        Stack<Character> stack = new Stack<>();
+    public static Integer checkZero(int n, String brackets) {
+        Stack<Integer> stack = new Stack<>();
+        int result = 0;
+        for (int i = 0; i < n; i++) {
 
-        for (char el : brackets.toCharArray()) {
-            if (el == '0') {
+            if (brackets == "0") {
                 stack.pop();
             } else {
-                stack.push(el);
+                stack.push(Integer.parseInt(brackets));
             }
+            result = +stack.peek();
+            System.out.printf("Result::", stack.peek());
+        }
 
-        }
         if (!stack.isEmpty()) {
-            return "NO";
-        } else if (stack.isEmpty()) {
-            return "YES";
+            return 0;
         }
-        return null;
+        return result;
     }
 }
