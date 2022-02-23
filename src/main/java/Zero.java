@@ -7,34 +7,26 @@ public class Zero {
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
+        Stack<Integer> stack = new Stack<Integer>();
 
         int N = Integer.parseInt(br.readLine());
 
+        for (int i = 0; i < N; i++) {
+            int el = Integer.parseInt(br.readLine());
 
-        sb.append(checkZero(N, br.readLine()));
-
-
-        System.out.println(sb);
-    }
-
-    public static Integer checkZero(int n, String brackets) {
-        Stack<Integer> stack = new Stack<>();
-        int result = 0;
-        for (int i = 0; i < n; i++) {
-
-            if (brackets == "0") {
+            if (el == 0) {
                 stack.pop();
             } else {
-                stack.push(Integer.parseInt(brackets));
+                stack.push(el);
             }
-            result = +stack.peek();
-            System.out.printf("Result::", stack.peek());
         }
 
-        if (!stack.isEmpty()) {
-            return 0;
+        int result = 0;
+        for (int value : stack) {
+            result += value;
         }
-        return result;
+
+        System.out.println(result);
+
     }
 }
