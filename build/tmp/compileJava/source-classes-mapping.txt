@@ -10,3 +10,5 @@ stack/Zero.java
  stack.Zero
 queue/Josephus.java
  queue.Josephus
+deque/Deque.java
+ deque.Deque
