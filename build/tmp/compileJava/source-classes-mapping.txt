@@ -8,3 +8,5 @@ queue/Queue.java
  queue.Queue
 stack/Zero.java
  stack.Zero
+queue/Josephus.java
+ queue.Josephus
