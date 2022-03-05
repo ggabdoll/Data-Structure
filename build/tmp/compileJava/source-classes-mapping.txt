@@ -12,3 +12,5 @@ queue/Josephus.java
  queue.Josephus
 deque/Deque.java
  deque.Deque
+deque/Card2.java
+ deque.Card2
