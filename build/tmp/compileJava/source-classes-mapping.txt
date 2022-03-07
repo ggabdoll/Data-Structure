@@ -14,5 +14,5 @@ deque/Deque.java
  deque.Deque
 deque/Card2.java
  deque.Card2
-queue/PrintQ.java
- queue.PrintQ
+queue/Stranger1764.java
+ queue.Stranger1764
