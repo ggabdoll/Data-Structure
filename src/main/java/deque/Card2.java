@@ -8,6 +8,7 @@ import java.util.ArrayDeque;
 public class Card2 {
 
     // 생각보다 더 간단 했던 문제이다.
+    // 오늘은 화면정의서를 만들어야 할 것 같다!!
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
